@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Parking Locator</title>
+
+</head>
+<body>
+  
+  <div>
+    <h1>Kendaraan Parkir</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>NAMA</td>
+          <td>NOPOL</td>
+          <td>LAT</td>
+          <td>LON</td>
+        </tr>
+      </thead>
+      <tbody>
+      <% data.forEach((d) => { %>
+        <tr>
+          <td><%= d.id %></td>
+          <td><%= d.nama %></td>
+          <td><%= d.nopol %></td>
+          <td><%= d.lat %></td>
+          <td><%= d.lon %></td>
+        </tr>
+      <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
