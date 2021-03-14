@@ -24,6 +24,7 @@ npm run start
 ### Error?
 - Create database: ```parking_locator```
 - Create table: ```parking```
+
 | Field | Type |
 |---|---|
 | #id | int(11) |
